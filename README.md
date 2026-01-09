@@ -33,5 +33,35 @@ Projeyi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin
 
 ### 1. Projeyi Klonlayın
 ```bash
-git clone [https://github.com/kullaniciadiniz/AyancikYemekWeb.git](https://github.com/kullaniciadiniz/AyancikYemekWeb.git)
-cd AyancikYemekWeb
+git clone [https://github.com/kullaniciadiniz/AyancikYemekWeb.git](https://github.com/kullaniciadiniz/AyancikMYOYemekBot.git)
+cd AyancikMYOYemekBot
+```
+
+**Telegram Token Ayarı**
+Proje dosyaları içerisinde TelegramService.cs (veya tokenin tanımlı olduğu ilgili servis dosyasını) açın. 
+
+// ÖRNEK KOD (Lütfen kendi tokeninizi girin)
+private readonly string _botToken = "TOKEN";
+
+**Veritabanı Bağlantısı**
+appsettings.json dosyasını açın ve ConnectionStrings alanını kendi yerel SQL Server ayarlarınıza göre düzenleyin:
+
+"ConnectionStrings": {
+  "DefaultConnection": "Server=.;Database=AyancikYemekDb;Trusted_Connection=True;TrustServerCertificate=True;"
+}
+
+**Migration Uygulama**
+Veritabanını ve tabloları oluşturmak için Package Manager Console'da şu komutu çalıştırın:
+
+
+Update-Database
+
+**Projeyi Başlatın**
+Artık projeyi Visual Studio üzerinden veya terminalden başlatabilirsiniz:
+
+dotnet run
+
+👤 İletişim
+Burhan Şahin Web: burhansahin.com.tr
+
+LinkedIn: linkedin.com/in/burhan-sahin
