@@ -68,7 +68,7 @@ dotnet run
 [Buraya Tıklayınz!](https://burhansahin.com.tr/Yemek)
 
 
-👤 İletişim
-Burhan Şahin Web: [Buraya Tıklayınz!](https://burhansahin.com.tr/)
+👤 İletişim:
+[burhansahin.com.tr](https://burhansahin.com.tr/)
 
 [LinkedIn](https://www.linkedin.com/in/burhan-sahin/)
