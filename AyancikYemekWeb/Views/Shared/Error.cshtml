@@ -1,0 +1,59 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Hata";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+
+            <div class="custom-card p-5 text-center" style="border-top: 5px solid #dc3545;">
+
+                <div class="mb-4">
+                    <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-danger bg-opacity-10 p-4">
+                        <i class="bi bi-exclamation-triangle-fill text-danger" style="font-size: 4rem;"></i>
+                    </div>
+                </div>
+
+                <h1 class="display-6 fw-bold text-white mb-3">Bir Sorun Oluştu</h1>
+                <p class="text-white-50 fs-5 mb-4">İsteğinizi işlerken beklenmedik bir hatayla karşılaştık.</p>
+
+                @if (Model.ShowRequestId)
+                {
+                    <div class="bg-dark border border-secondary rounded-3 p-3 mb-4 d-inline-block">
+                        <small class="text-muted d-block text-uppercase fw-bold mb-1" style="font-size: 0.7rem;">HATA TAKİP KODU (REQUEST ID)</small>
+                        <code class="fs-5 text-warning font-monospace">@Model.RequestId</code>
+                    </div>
+                }
+
+                <div class="mt-2">
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-light rounded-pill px-4 py-2">
+                        <i class="bi bi-house-door-fill me-2"></i> Anasayfaya Dön
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-4 text-center">
+                <a class="text-decoration-none text-muted small" data-bs-toggle="collapse" href="#devInfo" role="button" aria-expanded="false">
+                    <i class="bi bi-code-slash me-1"></i> Geliştirici Detaylarını Göster
+                </a>
+
+                <div class="collapse mt-3" id="devInfo">
+                    <div class="card bg-dark border-secondary">
+                        <div class="card-body text-start">
+                            <h5 class="text-warning h6">Development Mode</h5>
+                            <p class="small text-white-50 mb-2">
+                                Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
+                            </p>
+                            <p class="small text-white-50 mb-0">
+                                <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
+                                It can result in displaying sensitive information from exceptions to end users.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

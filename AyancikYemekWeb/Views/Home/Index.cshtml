@@ -1,0 +1,83 @@
+﻿@model AyancikYemekWeb.Models.YemekModel
+@{
+    ViewData["Title"] = "Günün Menüsü";
+}
+
+<div class="row justify-content-center py-5">
+    <div class="col-md-8 col-lg-6 text-center">
+
+        <h1 class="display-5 fw-bold text-white mb-2">
+            Ayancık MYO <span style="color: #F37021;">Yemekhane</span>
+        </h1>
+        <p class="text-white-50 mb-5">Modern, hızlı ve cebinde. Bugün ne var?</p>
+
+        @if (Model.MenüVarMi)
+        {
+            <div class="custom-card">
+
+                <div class="card-header-gradient">
+                    <h2 class="h4 mb-0 text-white"><i class="bi bi-calendar2-week me-2"></i> @Model.Tarih</h2>
+                    <span class="badge bg-warning text-dark mt-2 rounded-pill">Günün Menüsü</span>
+                </div>
+
+                <div class="text-start">
+
+                    <div class="food-item p-4 d-flex align-items-center">
+                        <div class="food-icon"><i class="bi bi-cup-hot-fill"></i></div>
+                        <div>
+                            <small class="text-muted fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">BAŞLANGIÇ</small>
+                            <div class="fs-5 fw-bold">@Model.Corba</div>
+                        </div>
+                    </div>
+
+                    <div class="food-item p-4 d-flex align-items-center">
+                        <div class="food-icon"><i class="bi bi-egg-fried"></i></div>
+                        <div>
+                            <small class="text-muted fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">ANA YEMEK</small>
+                            <div class="fs-5 fw-bold text-white">@Model.AnaYemek</div>
+                        </div>
+                    </div>
+
+                    <div class="food-item p-4 d-flex align-items-center">
+                        <div class="food-icon"><i class="bi bi-basket3-fill"></i></div>
+                        <div>
+                            <small class="text-muted fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">YARDIMCI</small>
+                            <div class="fs-5 fw-bold">@Model.YardimciYemek</div>
+                        </div>
+                    </div>
+
+                    <div class="food-item p-4 d-flex align-items-center">
+                        <div class="food-icon"><i class="bi bi-pie-chart-fill"></i></div>
+                        <div>
+                            <small class="text-muted fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">TATLI / MEYVE</small>
+                            <div class="fs-5 fw-bold">@Model.Tatli</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3 text-center text-white-50 small border-top border-secondary">
+                    Afiyet Olsun! 😋
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <a href="https://t.me/AyancikMYOYemekBot" target="_blank" class="btn btn-sinop rounded-pill px-5 py-3 fw-bold">
+                    <i class="bi bi-telegram me-2"></i> Telegram'dan Bildirim Al
+                </a>
+            </div>
+        }
+        else
+        {
+            <div class="custom-card p-5 text-center">
+                <div class="mb-3 text-secondary">
+                    <i class="bi bi-moon-stars" style="font-size: 4rem;"></i>
+                </div>
+                <h4 class="fw-bold text-white">Menü Yayınlanmadı</h4>
+                <p class="text-white-50 small">Bugün (@Model.Tarih) için yemek listesi sisteme düşmedi.</p>
+                <button onclick="window.location.reload();" class="btn btn-outline-light rounded-pill mt-3 px-4">
+                    <i class="bi bi-arrow-clockwise me-1"></i> Tekrar Dene
+                </button>
+            </div>
+        }
+    </div>
+</div>

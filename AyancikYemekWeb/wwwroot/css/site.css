@@ -1,0 +1,130 @@
+/* --- DARK MODE MODERN TEMA --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Derin Siyah Arka Plan */
+    color: #e0e0e0; /* Kýrýk Beyaz Yazý (Gözü yormaz) */
+}
+
+/* Linkler */
+a {
+    text-decoration: none;
+    color: #4dabf7;
+    transition: 0.3s;
+}
+
+    a:hover {
+        color: #F37021;
+    }
+
+/* --- ORTAK KART TASARIMI (DARK) --- */
+.custom-card {
+    background-color: #1e1e1e; /* Mat Koyu Gri Kart */
+    border: 1px solid #333; /* Ýnce gri çerçeve */
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Koyu gölge */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .custom-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(243, 112, 33, 0.15); /* Hover olunca hafif turuncu parlama */
+        border-color: #F37021;
+    }
+
+/* --- YEMEK MENÜSÜ ÖZEL --- */
+.card-header-gradient {
+    background: linear-gradient(135deg, #002855 0%, #0f172a 100%); /* Lacivertten Siyaha Geçiþ */
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #F37021; /* Turuncu Çizgi */
+}
+
+.food-item {
+    border-bottom: 1px solid #2c2c2c; /* Çizgiler koyu gri */
+    background-color: #1e1e1e;
+    color: #fff;
+    transition: 0.2s;
+}
+
+    .food-item:last-child {
+        border-bottom: none;
+    }
+
+    .food-item:hover {
+        background-color: #252525;
+    }
+
+.food-icon {
+    font-size: 1.6rem;
+    width: 50px;
+    text-align: center;
+    color: #F37021; /* Neon Turuncu Ýkonlar */
+    background: rgba(243, 112, 33, 0.1);
+    padding: 8px;
+    border-radius: 12px;
+    margin-right: 15px;
+}
+
+/* --- GÝZLÝLÝK SAYFASI ÝKONLARI --- */
+.icon-box {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: 1.2rem;
+    flex-shrink: 0;
+    background-color: #2c2c2c; /* Koyu Gri Kutu */
+    color: #4dabf7; /* Mavi Ýkon */
+    transition: 0.3s;
+}
+
+.custom-card:hover .icon-box {
+    background-color: #F37021;
+    color: #fff;
+}
+
+/* --- BUTONLAR --- */
+.btn-sinop {
+    background: linear-gradient(45deg, #F37021, #d94e09); /* Turuncu Gradient Buton */
+    color: white;
+    border: none;
+    box-shadow: 0 4px 15px rgba(243, 112, 33, 0.4); /* Neon Glow Efekti */
+    transition: all 0.3s;
+}
+
+    .btn-sinop:hover {
+        color: white;
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(243, 112, 33, 0.6);
+    }
+
+/* --- NAVBAR & FOOTER --- */
+.navbar {
+    background-color: #1e1e1e !important;
+    border-bottom: 1px solid #333 !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #aaa !important;
+    transition: 0.3s;
+}
+
+    .nav-link:hover {
+        color: #F37021 !important;
+    }
+
+.footer {
+    background-color: #1e1e1e;
+    border-top: 1px solid #333;
+    color: #888;
+}

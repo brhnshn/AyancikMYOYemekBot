@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Gizlilik Politikası";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+            <h1 class="fw-bold display-5 text-white">Gizlilik Politikası</h1>
+            <p class="text-white-50 fs-5">Karanlıkta bile şeffafız.</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="custom-card p-4 mb-4 d-flex align-items-start">
+                <div class="icon-box"><i class="bi bi-database-lock"></i></div>
+                <div>
+                    <h5 class="fw-bold text-white mb-2">Hangi Verileri Topluyoruz?</h5>
+                    <p class="text-white-50 mb-0 small">Sadece Telegram Chat ID ve (varsa) Ad Soyad bilginiz kaydedilir.</p>
+                </div>
+            </div>
+
+            <div class="custom-card p-4 mb-4 d-flex align-items-start">
+                <div class="icon-box"><i class="bi bi-send-check"></i></div>
+                <div>
+                    <h5 class="fw-bold text-white mb-2">Ne İçin Kullanıyoruz?</h5>
+                    <p class="text-white-50 mb-0 small">Sadece size her sabah 11:00'de yemek menüsü göndermek için. Reklam yok.</p>
+                </div>
+            </div>
+
+            <div class="custom-card p-4 mb-4 d-flex align-items-start">
+                <div class="icon-box"><i class="bi bi-building"></i></div>
+                <div>
+                    <h5 class="fw-bold text-white mb-2">Veri Kaynağı</h5>
+                    <p class="text-white-50 mb-0 small">Veriler Sinop Üniversitesi SKS Daire Başkanlığı sitesinden otomatik çekilir.</p>
+                </div>
+            </div>
+
+            <div class="custom-card p-4 mb-4 d-flex align-items-start" style="border-left: 3px solid #dc3545;">
+                <div class="icon-box" style="color: #dc3545;"><i class="bi bi-x-circle"></i></div>
+                <div>
+                    <h5 class="fw-bold text-white mb-2">Nasıl İptal Ederim?</h5>
+                    <p class="text-white-50 mb-0 small">Botu Telegram'dan engellemeniz veya sohbeti silmeniz yeterlidir.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 text-white-50 small">
+                <p>Son Güncelleme: @DateTime.Now.ToString("dd MMMM yyyy")</p>
+            </div>
+        </div>
+    </div>
+</div>
