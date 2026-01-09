@@ -63,7 +63,12 @@ Artık projeyi Visual Studio üzerinden veya terminalden başlatabilirsiniz:
 
 dotnet run
 
-👤 İletişim
-Burhan Şahin Web: burhansahin.com.tr
 
-LinkedIn: linkedin.com/in/burhan-sahin
+**CANLI DEMO İÇİN**
+[Buraya Tıklayınz!](https://burhansahin.com.tr/Yemek)
+
+
+👤 İletişim
+Burhan Şahin Web: [Buraya Tıklayınz!](https://burhansahin.com.tr/)
+
+[LinkedIn](https://www.linkedin.com/in/burhan-sahin/)
