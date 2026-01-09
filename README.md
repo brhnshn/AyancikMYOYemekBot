@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![.NET 8](https://img.shields.io/badge/.NET-8.0-purple.svg) ![Status](https://img.shields.io/badge/Status-Completed-success.svg)
 
-**AyancıkYemekWeb**, Sinop Üniversitesi Ayancık Meslek Yüksekokulu'nun web sitesinden günlük yemek menüsünü otomatik olarak çeken (web scraping), veritabanına kaydeden ve öğrencilere Telegram üzerinden anlık bildirim gönderen modern bir web uygulamasıdır.
+**AyancıkMYOYemekBot**u, Sinop Üniversitesi Ayancık Meslek Yüksekokulu'nun web sitesinden günlük yemek menüsünü otomatik olarak çeken (web scraping), veritabanına kaydeden ve öğrencilere Telegram üzerinden anlık bildirim gönderen modern bir web uygulamasıdır.
 
 ## 🌟 Özellikler
 
