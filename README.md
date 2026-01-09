@@ -37,13 +37,13 @@ git clone [https://github.com/kullaniciadiniz/AyancikYemekWeb.git](https://githu
 cd AyancikMYOYemekBot
 ```
 
-**Telegram Token Ayarı**
+**2.Telegram Token Ayarı**
 Proje dosyaları içerisinde TelegramService.cs (veya tokenin tanımlı olduğu ilgili servis dosyasını) açın. 
 
 // ÖRNEK KOD (Lütfen kendi tokeninizi girin)
 private readonly string _botToken = "TOKEN";
 
-**Veritabanı Bağlantısı**
+**3.Veritabanı Bağlantısı**
 
 appsettings.json dosyasını açın ve ConnectionStrings alanını kendi yerel SQL Server ayarlarınıza göre düzenleyin:
 
@@ -51,10 +51,9 @@ appsettings.json dosyasını açın ve ConnectionStrings alanını kendi yerel S
   "DefaultConnection": "Server=.;Database=AyancikYemekDb;Trusted_Connection=True;TrustServerCertificate=True;"
 }
 
-**Migration Uygulama**
+**4.Migration Uygulama**
 
 Veritabanını ve tabloları oluşturmak için Package Manager Console'da şu komutu çalıştırın:
-
 
 Update-Database
 
