@@ -44,6 +44,7 @@ Proje dosyaları içerisinde TelegramService.cs (veya tokenin tanımlı olduğu 
 private readonly string _botToken = "TOKEN";
 
 **Veritabanı Bağlantısı**
+
 appsettings.json dosyasını açın ve ConnectionStrings alanını kendi yerel SQL Server ayarlarınıza göre düzenleyin:
 
 "ConnectionStrings": {
@@ -51,6 +52,7 @@ appsettings.json dosyasını açın ve ConnectionStrings alanını kendi yerel S
 }
 
 **Migration Uygulama**
+
 Veritabanını ve tabloları oluşturmak için Package Manager Console'da şu komutu çalıştırın:
 
 
