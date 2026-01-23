@@ -33,7 +33,7 @@ Projeyi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin
 
 ### 1. Projeyi Klonlayın
 ```bash
-git clone [https://github.com/kullaniciadiniz/AyancikYemekWeb.git](https://github.com/kullaniciadiniz/AyancikMYOYemekBot.git)
+git clone [https://github.com/brhnshn/AyancikYemekWeb.git](https://github.com/brhnshn/AyancikMYOYemekBot.git)
 cd AyancikMYOYemekBot
 ```
 
